@@ -1,0 +1,29 @@
+
+///my action function package
+///call the function to act a single axis,and it will return when action finished.
+
+
+void MainWindow::single_axis_action(unsigned short axis,bool PR)
+{
+	dmc_pmove();
+ 	do
+	{
+		if(pause)
+		{
+			do
+			{
+				Sleep(200);
+			}while(pause);
+		}	
+	}while( dmc_check_done()==0);
+}
+
+
+///my check the action position function package
+///call the function after the last function was called 
+
+
+void MainWindow::position_check()
+{
+
+}

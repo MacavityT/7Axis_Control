@@ -1,0 +1,8 @@
+//回原点运动
+int CardNo,Axis,IoType,MapIoType,MapIoIndex,Myenable,Mylogic ;
+double Filter;
+CardNo=0;
+for (Axis=0;;Axis++)
+{
+dmc_set_AxisIoMap(CardNo,Axis,3,6,0,0.01);
+}

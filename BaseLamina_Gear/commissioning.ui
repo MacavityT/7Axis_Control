@@ -1,0 +1,1315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>commissioning</class>
+ <widget class="QDialog" name="commissioning">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1366</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Machine Commissioning</string>
+  </property>
+  <widget class="QToolButton" name="Y0_AHEAD">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>340</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="arrowType">
+    <enum>Qt::UpArrow</enum>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">commi_button_group</string>
+   </attribute>
+  </widget>
+  <widget class="QToolButton" name="YO_BACK">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>620</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="arrowType">
+    <enum>Qt::DownArrow</enum>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">commi_button_group</string>
+   </attribute>
+  </widget>
+  <widget class="QToolButton" name="X1_RIGHT">
+   <property name="geometry">
+    <rect>
+     <x>1210</x>
+     <y>440</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="arrowType">
+    <enum>Qt::RightArrow</enum>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">commi_button_group</string>
+   </attribute>
+  </widget>
+  <widget class="QToolButton" name="X1_LEFT">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>440</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="arrowType">
+    <enum>Qt::LeftArrow</enum>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">commi_button_group</string>
+   </attribute>
+  </widget>
+  <widget class="QToolButton" name="Y1_AHEAD">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>340</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="arrowType">
+    <enum>Qt::UpArrow</enum>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">commi_button_group</string>
+   </attribute>
+  </widget>
+  <widget class="QToolButton" name="Y1_BACK">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>620</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="arrowType">
+    <enum>Qt::DownArrow</enum>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">commi_button_group</string>
+   </attribute>
+  </widget>
+  <widget class="QToolButton" name="Y2_AHEAD">
+   <property name="geometry">
+    <rect>
+     <x>1040</x>
+     <y>340</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="arrowType">
+    <enum>Qt::UpArrow</enum>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">commi_button_group</string>
+   </attribute>
+  </widget>
+  <widget class="QToolButton" name="Y2_BACK">
+   <property name="geometry">
+    <rect>
+     <x>1040</x>
+     <y>620</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="arrowType">
+    <enum>Qt::DownArrow</enum>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">commi_button_group</string>
+   </attribute>
+  </widget>
+  <widget class="QToolButton" name="X0_LEFT">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>510</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="arrowType">
+    <enum>Qt::LeftArrow</enum>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">commi_button_group</string>
+   </attribute>
+  </widget>
+  <widget class="QToolButton" name="X0_RIGHT">
+   <property name="geometry">
+    <rect>
+     <x>1210</x>
+     <y>510</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="arrowType">
+    <enum>Qt::RightArrow</enum>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">commi_button_group</string>
+   </attribute>
+  </widget>
+  <widget class="QToolButton" name="Z0_UP">
+   <property name="geometry">
+    <rect>
+     <x>890</x>
+     <y>450</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="arrowType">
+    <enum>Qt::UpArrow</enum>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">commi_button_group</string>
+   </attribute>
+  </widget>
+  <widget class="QToolButton" name="Z0_DOWN">
+   <property name="geometry">
+    <rect>
+     <x>890</x>
+     <y>520</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="arrowType">
+    <enum>Qt::DownArrow</enum>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">commi_button_group</string>
+   </attribute>
+  </widget>
+  <widget class="QToolButton" name="Z1_UP">
+   <property name="geometry">
+    <rect>
+     <x>1010</x>
+     <y>450</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="arrowType">
+    <enum>Qt::UpArrow</enum>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">commi_button_group</string>
+   </attribute>
+  </widget>
+  <widget class="QToolButton" name="Z1_DOWN">
+   <property name="geometry">
+    <rect>
+     <x>1010</x>
+     <y>520</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="arrowType">
+    <enum>Qt::DownArrow</enum>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">commi_button_group</string>
+   </attribute>
+  </widget>
+  <widget class="QLabel" name="Y0">
+   <property name="geometry">
+    <rect>
+     <x>830</x>
+     <y>250</y>
+     <width>61</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>200</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Text">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>200</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>200</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Text">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>200</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>120</red>
+         <green>120</green>
+         <blue>120</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Text">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>120</red>
+         <green>120</green>
+         <blue>120</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 24pt &quot;Adobe 黑体 Std R&quot;;</string>
+   </property>
+   <property name="text">
+    <string>YO</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Y1">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>250</y>
+     <width>61</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>200</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>200</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>120</red>
+         <green>120</green>
+         <blue>120</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 24pt &quot;Adobe 黑体 Std R&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Y1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Y2">
+   <property name="geometry">
+    <rect>
+     <x>1050</x>
+     <y>250</y>
+     <width>61</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>200</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>200</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>120</red>
+         <green>120</green>
+         <blue>120</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 24pt &quot;Adobe 黑体 Std R&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Y2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="X0">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>510</y>
+     <width>61</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>200</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>200</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>120</red>
+         <green>120</green>
+         <blue>120</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 24pt &quot;Adobe 黑体 Std R&quot;;</string>
+   </property>
+   <property name="text">
+    <string>X0</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="X1">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>440</y>
+     <width>61</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>200</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>200</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>120</red>
+         <green>120</green>
+         <blue>120</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 24pt &quot;Adobe 黑体 Std R&quot;;</string>
+   </property>
+   <property name="text">
+    <string>X1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Z0">
+   <property name="geometry">
+    <rect>
+     <x>830</x>
+     <y>480</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>200</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>200</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>120</red>
+         <green>120</green>
+         <blue>120</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 24pt &quot;Adobe 黑体 Std R&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Z0</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Z1">
+   <property name="geometry">
+    <rect>
+     <x>1070</x>
+     <y>480</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>200</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>200</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>120</red>
+         <green>120</green>
+         <blue>120</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 24pt &quot;Adobe 黑体 Std R&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Z1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="HIGH_SPEED">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>150</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;Adobe 黑体 Std R&quot;;</string>
+   </property>
+   <property name="text">
+    <string>高速</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="LOW_SPEED">
+   <property name="geometry">
+    <rect>
+     <x>1030</x>
+     <y>150</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;Adobe 黑体 Std R&quot;;</string>
+   </property>
+   <property name="text">
+    <string>低速</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">Position_Group</string>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="AirCylinder1">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>200</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>气缸1</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">AirCylinder_Group</string>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="AirCylinder2">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>200</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>气缸2</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">AirCylinder_Group</string>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="AirCylinder4">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>250</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>气缸4</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">AirCylinder_Group</string>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="AirCylinder3">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>250</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>气缸3</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">AirCylinder_Group</string>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="AirCylinder5">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>300</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>气缸5</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">AirCylinder_Group</string>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="AirCylinder6">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>300</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>气缸6</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">AirCylinder_Group</string>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="Electromagnet6">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>510</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>电磁铁6</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">Electromagnet_Group</string>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="Electromagnet4">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>460</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>电磁铁4</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">Electromagnet_Group</string>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="Electromagnet2">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>410</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>电磁铁2</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">Electromagnet_Group</string>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="Electromagnet1">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>410</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>电磁铁1</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">Electromagnet_Group</string>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="Electromagnet5">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>510</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>电磁铁5</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">Electromagnet_Group</string>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="Electromagnet3">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>460</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>电磁铁3</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">Electromagnet_Group</string>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="GasClaw6">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>300</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>气爪6</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">GasClaw_Group</string>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="GasClaw4">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>250</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>气爪4</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">GasClaw_Group</string>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="GasClaw2">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>200</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>气爪2</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">GasClaw_Group</string>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="GasClaw1">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>200</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>气爪1</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">GasClaw_Group</string>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="GasClaw5">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>300</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>气爪5</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">GasClaw_Group</string>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="GasClaw3">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>250</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>气爪3</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">GasClaw_Group</string>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="Electromagnet9">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>460</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>电磁铁9</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">Electromagnet_Group</string>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="Electromagnet11">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>510</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>电磁铁11</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">Electromagnet_Group</string>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="Electromagnet10">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>460</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>电磁铁10</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">Electromagnet_Group</string>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="Electromagnet7">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>410</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>电磁铁7</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">Electromagnet_Group</string>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="Electromagnet12">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>510</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>电磁铁12</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">Electromagnet_Group</string>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="Electromagnet8">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>410</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>电磁铁8</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">Electromagnet_Group</string>
+   </attribute>
+  </widget>
+  <widget class="QLabel" name="Live_Status_5">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>110</y>
+     <width>331</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 28pt &quot;Adobe 黑体 Std R&quot;;</string>
+   </property>
+   <property name="text">
+    <string>输出控制</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="X1_Position">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>450</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="X0_Position">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>520</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Y0_Position">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>300</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Y1_Position">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>300</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Y2_Position">
+   <property name="geometry">
+    <rect>
+     <x>1040</x>
+     <y>300</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Z0_Position">
+   <property name="geometry">
+    <rect>
+     <x>890</x>
+     <y>490</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Z1_Position">
+   <property name="geometry">
+    <rect>
+     <x>1010</x>
+     <y>490</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="CrossWiseAirCylinder">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>350</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>横向气缸</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="HIGH_SPEED_SET">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>110</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="LOW_SPEED_SET">
+   <property name="geometry">
+    <rect>
+     <x>1030</x>
+     <y>110</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="AirCylinder_Group"/>
+  <buttongroup name="Electromagnet_Group"/>
+  <buttongroup name="GasClaw_Group"/>
+  <buttongroup name="Position_Group"/>
+  <buttongroup name="commi_button_group"/>
+ </buttongroups>
+</ui>
